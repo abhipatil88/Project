@@ -519,7 +519,7 @@ body{
 #page7{
     height: 150%;
     width: 100%;
-    background-color: yellow;
+/*     background-color: yellow; */
     margin-top: 5%;
 }
 #page7 img{
@@ -1093,7 +1093,7 @@ body{
 #page7{
     height: 150%;
     width: 100%;
-    background-color: yellow;
+/*     background-color: yellow; */
     margin-top: 115vw;
 }
 #page7 img{
