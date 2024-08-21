@@ -1,0 +1,1235 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html ,body {
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: #F8F8F8;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #F8F8F8;
+    position: relative;
+    padding-top: 0.1px;
+}
+
+#nav{
+    height: 11vh;
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 40px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav h1{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: url(../../Downloads/monumentextended-freeforpersonaluse/MonumentExtended-FreeForPersonalUse/MonumentExtended-Ultrabold.otf) ;
+    font-weight: 800;
+    font-size: 45px;
+    letter-spacing: -3.5px;
+    position: relative;
+    
+}
+#nav h1::after{
+    content: "©️";
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    position: absolute;
+    top:25%;
+    right:18%;
+}
+#nav h1::before{
+    content: "model management";
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    color: #666;
+    font-size: 13px;
+    letter-spacing: 0.1px;
+    position: absolute;
+    bottom:8%;
+    right:15%;
+}
+#nav h2{
+    height: 100%;
+    width: 23%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    border-right: 1.5px solid black ;
+    font-size: 25px;
+    font-weight: 450;
+    /* background-color: red; */
+}
+
+#nav h2:nth-last-child(2){
+    width: 30%;
+}
+
+#nav h2:nth-last-child(1){
+    width: 10%;
+}
+#nav h3{
+    display: none;
+}
+
+#center {
+    height: 90%;
+    width: 100%;
+    /* background-color: red; */
+    padding: 4vw;
+    position: relative;
+}
+
+#content {
+    height: 100%;
+    width: 100%;
+    /* background-color: blue; */
+    position: relative;
+}
+
+#content video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#overlay {
+    height: 53%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    /* background-color: red; */
+    padding: 3vw;
+    color: #ffff;
+}
+
+#over1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2vh;
+
+}
+#over1 h1{
+    font-family: url(../../Downloads/monumentextended-freeforpersonaluse/MonumentExtended-FreeForPersonalUse/MonumentExtended-Ultrabold.otf) ;
+    font-size: 3.6vw;
+    font-weight: 700;
+    /* mix-blend-mode: difference; */
+}
+
+#over1 h2{
+    font-size: 1vw;
+    padding: 2vw 2.3vw;
+    border-radius: 50%;
+    border: 1px solid #ffff;
+}
+#over2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #ffff;
+    padding: 1.5vw 0vw;
+}
+
+#over2 h4{
+    font-size: 1.3vw;
+    font-weight: 500;
+
+}
+
+#over2 img{
+    height: 3vw;
+}
+
+#scroll
+{
+    height: 40vh;
+    width: 100%;
+    /* background-color: red; */
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    /* padding-top: 30px; */
+
+}
+#container{
+    height: 100%;
+    width: 120%;
+     /* background-color: blue;  */
+    display: inline-block;
+    padding: 2vw;
+    animation-name: anime;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#scroll img{
+    margin: 1vw;
+    height: 95%;
+    border-radius: 50%;
+    width: 15%;
+    object-fit: cover;
+    object-position: 30% 30%;
+
+}
+
+@keyframes anime {
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(-100%);
+    }
+    
+}
+
+#alphabet{
+    height: 11vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8vw;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+#alphabet h5{
+    font-size: 1.7vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 4px;
+    border-bottom: 2px solid black;
+    margin-right: 2vw;
+
+
+}  
+#alphabet h6{
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 4px;
+    /* background-color: yellow; */
+    padding: 0.5vw 0.7vw;
+    border-radius: 50%;
+    transition: all ease 0.2s;
+    cursor: pointer;
+    border : 1px solid #00000000
+
+}  
+
+#alphabet h6:hover{
+    border: 1px solid #000;
+}
+#page2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5vw;
+}
+
+#page2-part1 {
+    height: 100%;
+    width: 50%;
+}
+
+#page2-part1 img{
+    height: 40vw;
+    width: 35vw;
+    object-fit: cover;
+}
+
+#page2-part1 h2{
+    margin-top: 15px;
+    font-family: url(../../Downloads/monumentextended-freeforpersonaluse/MonumentExtended-FreeForPersonalUse/MonumentExtended-Ultrabold.otf) ;
+    font-weight: 600;
+    font-size: 50px;
+}
+
+#page2-part2 {
+    height: 100%;
+    width: 46%;
+   
+}
+
+#page2-part2 img{
+    height: 130%;
+    width: 100%;
+    /* margin-left: 70px; */
+    object-fit: cover;
+}
+
+#page2-part2-text{
+    height: 70%;
+    width: 100%;
+    padding: 10px;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+#page2-part2-text h4{
+    width: 80%;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* background-color: red; */
+} 
+
+#page2-part2-text p{
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: -60px;
+    
+}
+#page3{
+    height: 130%;
+    width: 100%;
+    margin-top: 20%;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#page3-part1{
+    height: 100%;
+    width: 40%;
+    /* background-color: red; */
+}
+#page3-part1 img{
+    
+    padding: 28%;
+}
+#page3-part1 h4{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page3-part2 {
+    height: 100%;
+    width: 40%;
+    /* background-color: blue; */
+}
+
+#page3-part2 img{
+    height: 110%;
+    width: 120%;
+    object-fit: conver;
+
+}
+
+#page4 {
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    margin-top: 10%;
+    position: relative;
+}
+#page4 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 15% 65%;
+    
+}
+#page5{
+    height: 100%;
+    width: 100%;
+    /* background-color: red;*/
+     position: relative;
+     padding: 5vw 4vw;
+
+}
+
+#page5>h1{
+    text-align: center;
+    font-family: url(../../Downloads/monumentextended-freeforpersonaluse/MonumentExtended-FreeForPersonalUse/MonumentExtended-Ultrabold.otf) ;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 3.5vw;
+    word-spacing: 0.1px;
+    margin-bottom: 7vh;
+}
+
+.elem{
+    height: 15.5vh;
+    width: 100%;
+    /* background-color: red; */
+    border-top: 2px solid black ;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding:  0vw 2vw;
+    position: relative;
+    transition:all ease 0.7s;
+}
+
+.elem img{
+    height: 110px;
+    width: 110px;
+    position: absolute;
+    border-radius: 50%;
+    left: 12%;
+    opacity: 0;
+    object-position: top;
+    object-fit: cover;
+    transition: all ease 0.3s;
+}
+
+.elem h4{
+    font-size: 1.1vw;
+    font-weight: 500;
+    width: 6%;
+}
+.elem .elem-part2{
+    width: 43%;
+}
+.elem-part2 h1{
+    font-size: 2.5vw;
+    font-weight: 400;
+}
+.elem-part2 h5{
+    font-size: 0.8vw;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.elem:nth-last-child(1){
+
+        border-bottom: 2px solid #000;
+}
+
+.elem:nth-last-child(1) img{
+    left: 40%;
+}
+
+.elem:hover img{
+    opacity: 1;
+    left: 24%;
+}
+
+#page6{
+    height: 150%;
+    width: 100%;
+    margin-top: 7vh;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#page6-part1{
+    height: 100%;
+    width: 40%;
+    /* padding: 50px; */
+     /* background-color: aquamarine;  */
+    
+}
+#page6-part1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+} 
+
+ #page6-part2{
+    height: 100%;
+    width: 60%;
+    /* display: inline-block; */
+    
+     /* background-color: black;  */
+ }
+ #page6-part2 h2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    margin-left: 10%;
+    margin-bottom: 3%;
+} 
+ #page6-part2 h4{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 10%;
+    gap: 5%;
+    margin-bottom: 5%;
+}
+
+#page6-part2 p{
+        gap: 3%;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        justify-content: center;
+        margin-left: 10%;
+        
+} 
+
+ #right-left{
+    height: 50%;
+    width: 40%;
+    margin-top: 3.5%;
+    /* background-color: blue; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20%;
+    
+}
+
+#right-left img{
+    height: 100%;
+    width: 150%;
+    object-fit: cover; 
+    object-position: top; 
+
+}
+
+#page7{
+    height: 150%;
+    width: 100%;
+    background-color: yellow;
+    margin-top: 5%;
+}
+#page7 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+#marque {
+    /* height: 15vh; */
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 5%;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 0.7vw;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#marque h1{
+    display: inline-block;
+    font-size: 3vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    letter-spacing: 3px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-right: 16px;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes move {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 20px));
+    }
+    
+}
+
+#footer{
+    height: 90%;
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 2%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    
+}
+.first{
+    height: 100%;
+    width: 60%;
+     /* background-color: black;  */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border-right: 2px solid black; */
+}
+
+.first h1{
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+    font-family: url(../../Downloads/monumentextended-freeforpersonaluse/MonumentExtended-FreeForPersonalUse/MonumentExtended-Ultrabold.otf) ;
+    font-weight: 800;
+    font-size: 45px;
+    letter-spacing: -3.5px;
+    position: relative;
+    
+}
+.first h1::after{
+    content: "©️";
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    position: absolute;
+    top:30%;
+    right:17%;
+
+}
+.first h1::before{
+    content: "model management";
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    color: #666;
+    font-size: 13px;
+    letter-spacing: 0.1px;
+    position: absolute;
+    bottom:29%;
+    right:25%;
+
+}
+
+.second{
+    height: 100%;
+    width: 150%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    /* background-color: yellow; */
+}
+
+.second h3{
+    padding: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.third {
+    padding: 40px;
+    height: 100%;
+    width: 70%;
+    /* background-color: red; */
+}
+
+.third h3{
+    font-size: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    
+}
+
+@media (max-width:600px) {
+
+    body{
+        overflow-x: hidden;
+
+    }
+    #nav{
+        height: 8vh;
+        margin-top: 20px;
+        padding: 0 5vw;
+        
+    }
+    
+    #nav h1{
+        width: 40%;
+        justify-content: flex-start;
+        font-size: 24px;
+    }
+    #nav h1::after{
+        content: "©️";
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        position: absolute;
+        top:25%;
+        right:18%;
+        display: none;
+    }
+    #nav h1::before{
+        display: none;
+    }
+    #nav h2{
+        display: none;
+        /* background-color: red; */
+    }
+    #nav h3{
+        display: block;
+    }
+    #center {
+        height: 45%;
+        width: 100%;
+        /* background-color: red; */
+        padding: 3vw 4vw;
+        position: relative;
+    }
+    
+    #content {
+        height: 100%;
+        width: 100%;
+        /* background-color: blue; */
+        position: relative;
+    }
+    
+    #content video{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    #overlay {
+        height:fit-content;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        /* background-color: red; */
+        padding: 3vw;
+        color: #ffff;
+    }
+    
+    #over1{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2vh;
+    
+    }
+    #over1 h1{
+        font-family: url(../../Downloads/monumentextended-freeforpersonaluse/MonumentExtended-FreeForPersonalUse/MonumentExtended-Ultrabold.otf) ;
+        font-size: 5.5vw;
+        font-weight: 600;
+        /* mix-blend-mode: difference; */
+    }
+    
+    #over1 h2{
+        font-size: 2vw;
+        padding: 3vw 3.2vw;
+        border-radius: 50%;
+        border: 1px solid #ffff;
+    }
+    #over2{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 2px solid #ffff;
+        padding: 1.5vw 0vw;
+    }
+    
+    #over2 h4{
+        font-size: 3.3vw;
+        font-weight: 500;
+    
+    }
+    
+    #over2 img{
+        height: 5vw;
+    }
+    #scroll
+    {
+    height: 21.5vh;
+    width: 210%;
+    /* background-color: red; */
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    /* padding-top: 30px; */
+
+}
+#container{
+    height: 100%;
+    width: 120%;
+     /* background-color: blue;  */
+    display: inline-block;
+    padding: 2vw;
+    animation-name: anime;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#scroll img{
+    margin: 1vw;
+    height: 95%;
+    border-radius: 50%;
+    width: 14.7%;
+    object-fit: cover;
+    object-position: 30% 30%;
+
+}
+#alphabet{
+    height: 11vh;
+    width: 140%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7vw;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+#alphabet h5{
+    font-size: 3vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 2px;
+    border-bottom: 2px solid black;
+    margin-right: 2vw;
+
+
+}  
+#alphabet h6{
+    font-size: 2vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 2px;
+    /* background-color: yellow; */
+    padding: 0.5vw 0.7vw;
+    border-radius: 50%;
+    transition: all ease 0.2s;
+    cursor: pointer;
+    border : 1px solid #00000000
+
+}  
+
+#alphabet h6:hover{
+    border: 1px solid #000;
+}
+
+#page2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw;
+}
+
+#page2-part1 {
+    height: 100%;
+    width: 50%;
+}
+
+#page2-part1 img{
+    height: 70vw;
+    width: 40vw;
+    object-fit: cover;
+}
+
+#page2-part1 h2{
+    margin-top: 15px;
+    font-family: url(../../Downloads/monumentextended-freeforpersonaluse/MonumentExtended-FreeForPersonalUse/MonumentExtended-Ultrabold.otf) ;
+    font-weight: 600;
+    font-size: 35px;
+}
+#page2-part2 {
+    height: 100%;
+    width: 46%;
+   
+}
+
+#page2-part2 img{
+    height: 130%;
+    width: 120%;
+    /* margin-left: 70px; */
+    object-fit: cover;
+}
+
+#page2-part2-text{
+    height: 100%;
+    width: 100%;
+    padding: 1px;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+#page2-part2-text h4{
+    width: 90%;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* background-color: red; */
+} 
+
+#page2-part2-text p{
+    width: 150%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: -60px;
+}
+#page3{
+    height: 130%;
+    width: 100%;
+    margin-top: 90vw;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#page3-part1{
+    height: 100%;
+    width: 80%;
+    /* background-color: red; */
+}
+#page3-part1 img{
+    
+    padding: 1.5vw;
+    width: 40vw;
+}
+#page3-part1 h4{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page3-part2 {
+    height: 100%;
+    width: 40%;
+    background-color: blue;
+}
+
+#page3-part2 img{
+    height: 95vw;
+    width: 40vw;
+    object-fit: conver;
+
+}
+#page4 {
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 10%;
+    position: relative;
+}
+#page4 img{
+    height: 100%;
+    width: fit-content;
+    object-fit: cover;
+    object-position: 15% 65%;
+    
+}
+
+#page5{
+    height: 100%;
+    width: 100%;
+    /* background-color: red;*/
+     position: relative;
+     padding: 5vw 4vw;
+
+}
+
+#page5>h1{
+    text-align: center;
+    font-family: url(../../Downloads/monumentextended-freeforpersonaluse/MonumentExtended-FreeForPersonalUse/MonumentExtended-Ultrabold.otf) ;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 7.5vw;
+    word-spacing: 0.1px;
+    margin-bottom: 2.5vh;
+}
+
+.elem{
+    height: 10vh;
+    width: 100%;
+    /* background-color: red; */
+    border-top: 2px solid black ;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding:  0vw 2vw;
+    position: relative;
+    transition:all ease 0.7s;
+}
+
+.elem img{
+    height: 70px;
+    width: 60px;
+    position: absolute;
+    border-radius: 50%;
+    left: 12%;
+    opacity: 0;
+    object-position: top;
+    object-fit: cover;
+    transition: all ease 0.3s;
+}
+
+.elem h4{
+    font-size: 3vw;
+    font-weight: 500;
+    width: 6%;
+}
+.elem .elem-part2{
+    width: 43%;
+}
+.elem-part2 h1{
+    font-size: 4vw;
+    font-weight: 400;
+}
+.elem-part2 h5{
+    font-size: 1.7vw;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+#page6{
+    height: 150%;
+    width: 100%;
+    margin-top: 7vh;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#page6-part1{
+    height: 100%;
+    width: 40%;
+    /* padding: 50px; */
+     /* background-color: aquamarine;  */
+    
+}
+#page6-part1 img{
+    height: 102vw;
+    width: 40vw;
+    object-fit: cover;
+} 
+
+ #page6-part2{
+    height: 100%;
+    width: 60%;
+    /* display: inline-block; */
+    
+     /* background-color: black;  */
+ }
+ #page6-part2 h2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    margin-left: 25%;
+    margin-bottom: 3%;
+} 
+ #page6-part2 h4{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25%;
+    gap: 5%;
+    margin-bottom: 5%;
+}
+
+#page6-part2 p{
+        gap: 3%;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        justify-content: center;
+        margin-left: 25%;
+        
+} 
+
+ #right-left{
+    height: 50%;
+    width: 40%;
+    margin-top: 3.5%;
+    /* background-color: blue; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2%;
+    margin-top: 20%;
+    
+}
+
+#right-left img{
+    height: 73vw;
+    width: 60vw;
+    object-fit: cover; 
+    object-position: top;
+}
+
+#page7{
+    height: 150%;
+    width: 100%;
+    background-color: yellow;
+    margin-top: 115vw;
+}
+#page7 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+#marque {
+    /* height: 15vh; */
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 12%;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 0.7vw;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#marque h1{
+    display: inline-block;
+    font-size: 3vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    letter-spacing: 3px;
+    font-family: Monument;
+    margin-right: 16px;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes move {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 20px));
+    }
+    
+}
+
+#footer{
+    height: 90%;
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 2%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    
+}
+.first{
+    height: 100%;
+    width: 60%;
+     /* background-color: black;  */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border-right: 2px solid black; */
+}
+
+.first h1{
+    padding: 1px;
+    align-items: center;
+    justify-content: center;
+    font-family: url(../../Downloads/monumentextended-freeforpersonaluse/MonumentExtended-FreeForPersonalUse/MonumentExtended-Ultrabold.otf) ;
+    font-weight: 800;
+    font-size: 45px;
+    letter-spacing: -3.5px;
+    position: relative;
+    margin-bottom: 70%;
+    
+}
+.first h1::after{
+    content: "©️";
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    position: absolute;
+    top:2vw;
+    right:0.2%;
+
+}
+.first h1::before{
+    content: "model management";
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    color: #666;
+    font-size: 13px;
+    letter-spacing: 0.1px;
+    position: absolute;
+    bottom:0.2%;
+    right:11%;
+
+}
+
+.second{
+    height: 100%;
+    width: 150%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    /* background-color: yellow; */
+}
+
+.second h3{
+    padding: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    margin-top: 20%;
+    margin-left: 5%;
+    
+}
+
+.third {
+    padding: 40px;
+    height: 100%;
+    width: 70%;
+    /* background-color: red; */
+}
+
+.third h3{
+    font-size: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    
+}
+
+
+}
+
