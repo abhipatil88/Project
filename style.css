@@ -352,7 +352,6 @@ body{
 #page4 {
     height: 100%;
     width: 100%;
-    background-color: red;
     margin-top: 10%;
     position: relative;
 }
@@ -366,9 +365,8 @@ body{
 #page5{
     height: 100%;
     width: 100%;
-    /* background-color: red;*/
-     position: relative;
-     padding: 5vw 4vw;
+    position: relative;
+    padding: 5vw 4vw;
 
 }
 
